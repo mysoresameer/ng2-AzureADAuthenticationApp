@@ -20,6 +20,6 @@ export class LoginComponent {
     }
 
     logIn() {
-        this._authService.logIn("/");
+        this._authService.logIn("home");
     }
 }

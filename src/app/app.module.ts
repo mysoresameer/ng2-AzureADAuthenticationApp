@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
-import { routing } from './app.routing';
+import { AppRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
 
 import { HomeComponent } from './home/home.component';
@@ -25,7 +25,7 @@ import { AuthenticatedHttpService } from './ngAuth/AuthenticatedHttpService';
             useValue: authenticator
         }],*/
     imports: [
-        routing,
+        AppRoutingModule,
         BrowserModule,
         HttpModule
     ],

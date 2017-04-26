@@ -83,6 +83,10 @@ export class AzureADAuthService {
             "/oauth2/authorize?response_type=id_token&client_id=" + this._serviceConstants.clientID +
             "&redirect_uri=" + encodeURIComponent(window.location.href) +
             "&state=" + state + "&nonce=SomeNonce";
+
+        /*window.location.href = "https://login.microsoftonline.com/" + this._serviceConstants.tenantID +
+            "/oauth2/authorize?response_type=id_token&client_id=" + this._serviceConstants.clientID +
+            "&redirect_uri=" + encodeURIComponent(window.location.href) + "&nonce=SomeNonce" */;
     }
 
     public logOut(state = "/") {
